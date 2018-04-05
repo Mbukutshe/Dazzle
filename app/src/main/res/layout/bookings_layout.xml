@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundsplash"
+    android:scrollbars="none">
+<RelativeLayout
+    android:id="@+id/subscribe_layout"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:theme="@style/InputLayout"
-    android:background="@drawable/backgroundsplash"
+    android:background="#2a303a"
     android:layout_height="match_parent">
-    <ScrollView
-        android:id="@+id/subscribe_layout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingTop="@dimen/activity_horizontal_margin"
-        android:fitsSystemWindows="true"
-        android:background="#2a303a"
-        android:scrollbars="none">
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
@@ -446,5 +444,6 @@
                 </FrameLayout>
             </LinearLayout>
         </LinearLayout>
-    </ScrollView>
-</LinearLayout>
+
+</RelativeLayout>
+</ScrollView>

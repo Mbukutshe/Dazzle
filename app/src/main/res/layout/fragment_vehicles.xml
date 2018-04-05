@@ -13,7 +13,7 @@
         android:id="@+id/vehicles_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="@dimen/activity_horizontal_margin"
+        android:padding="@dimen/five_device_pixels"
         android:background="#EAEAEA">
     </android.support.v7.widget.RecyclerView>
 

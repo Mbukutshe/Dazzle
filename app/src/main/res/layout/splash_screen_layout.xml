@@ -6,6 +6,7 @@
     android:theme="@style/InputLayout"
     android:background="@drawable/backgroundsplash"
     android:layout_gravity="center"
+    android:gravity="center"
     android:layout_height="match_parent">
     <ScrollView
         android:id="@+id/splash_layout"
@@ -19,7 +20,7 @@
                 android:layout_width="match_parent"
                 android:layout_gravity="center"
                 android:padding="@dimen/activity_horizontal_margin"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content">
                     <FrameLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -52,8 +53,8 @@
                             android:layout_height="wrap_content"
                             android:text=""
                             android:textColor="#fff"
-                            android:textSize="20sp"
-                            android:layout_gravity="center" />
+                            android:textSize="15sp"
+                            android:layout_gravity="center"/>
                     </FrameLayout>
                     <FrameLayout
                         android:id="@+id/slogan"

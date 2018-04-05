@@ -21,21 +21,19 @@ public class TrashAndEditJSONParser {
 
         JSONArray items_arry = null;
         TrashAndEdit items = null;
-        try {
-
+        try
+        {
             items_arry = new JSONArray(content);
             itemList = new ArrayList<>();
-
             for (int i = 0; i < items_arry.length(); i++)
             {
-
                 JSONObject obj = items_arry.getJSONObject(i);
                 items = new TrashAndEdit(obj.getInt("vehicle_id"),obj.getString("vehicle_price"),"","","",obj.getString("vehicle_features"),obj.getString("vehicle_make"),"","",obj.getString("vehicle_link"));
                 itemList.add(items);
             }
-
         }
-        catch (JSONException ex) {
+        catch (JSONException ex)
+        {
             ex.printStackTrace();
         }
         return itemList;

@@ -14,7 +14,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
-import android.widget.ScrollView;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -40,7 +40,7 @@ public class Bookings extends AppCompatActivity implements View.OnClickListener{
     LinearLayout makeup,hair,morning,afternoon,evening,anytime,book;
     AppCompatCheckBox makeup_check,hair_check,morning_check,afternoon_check,evening_check,anytime_check;
     String name,number,phone,address,say,appointment_type,best_time;
-    ScrollView subscribe_layout;
+    RelativeLayout subscribe_layout;
     ProgressDialog myProgressDialog,progress;
     RequestQueue requestQueue;
     public static  int COUNT_DOWN=1000;
@@ -88,7 +88,7 @@ public class Bookings extends AppCompatActivity implements View.OnClickListener{
         anytime_check = findViewById(R.id.anytime_check);
         anytime_check.setOnClickListener(this);
 
-        subscribe_layout =(ScrollView) findViewById(R.id.subscribe_layout);
+        subscribe_layout =(RelativeLayout) findViewById(R.id.subscribe_layout);
         subscribe_layout.getBackground().setAlpha(180);
         myProgressDialog = new ProgressDialog(this);
         progress = new ProgressDialog(this);
